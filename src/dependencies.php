@@ -17,3 +17,12 @@ $container['logger'] = function ($c) {
     $logger->pushHandler(new Monolog\Handler\StreamHandler($settings['path'], $settings['level']));
     return $logger;
 };
+
+//adodb
+$container['adodb'] = function ($c) {
+	$settings = $c->get('settings')['db'];
+	$driver = 'mysqli';
+	$adodb = ADONewConnection($driver);
+	$adodb->connect($settings['dbserver'],$settings['dbuser'],$settings['dbpass'],$settings['dbname']);
+	return $adodb;
+};

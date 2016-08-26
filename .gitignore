@@ -1,2 +1,4 @@
 vendor/
 logs/
+src/dbconfig.php
+
