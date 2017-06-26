@@ -1,8 +1,10 @@
-#yadbapi:  slim 3 based API
+#yadbapi:  slim 3 based
 
 based on ...
 
 ## Slim Framework 3 Skeleton Application
+## Grassroots DICOM library
+## OHIF Viewer
 
 ### Fast start...
 
